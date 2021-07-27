@@ -21,19 +21,15 @@ First-party plugins needed for Tailwind UI:
 ### Getting Started 🚀
 
 
-
-```git clone https://github.com/unimrgm/space-app.git```
-```cd space-app```
-
-npm:
+#### Step 1:
 ```sh
-npm i
-npm run dev
-npm run build
-npm run serve
+git clone https://github.com/unimrgm/space-app.git
 ```
-
-yarn:
+#### Step 2:
+```sh
+cd space-app
+```
+#### Step 3:
 ```sh
 yarn
 yarn dev
