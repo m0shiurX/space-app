@@ -1,7 +1,8 @@
 {
-  "name": "vite2-vue3-tailwind2-starter",
+  "name": "space-app",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
