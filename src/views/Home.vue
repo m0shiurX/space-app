@@ -1,24 +1,54 @@
 <template>
-    <div class="bg-gray-50">
-      <div
-        class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
-      >
-        <h2
-          class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-        >
-          Ready to dive in?
-          <br />
-          <span class="mt-4 inline-block text-indigo-600">SpaceWorks Starter App</span>
-        </h2>
-        <div class="flex mt-8 lg:flex-shrink-0 lg:mt-0">
-          <div class="inline-flex rounded-md shadow">
-            <router-link
-              to="/about"
-              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none"
-              >About</router-link
-            >
-          </div>
-        </div>
-      </div>
+    <h1 class="font-bold text-center text-3xl pb-5" v-if="isEnabled">V Show</h1>
+    <ul class="list-inside text-center mx-auto">
+        <li v-for="fruit, index in fruits" :key="index">{{ index }} -{{ fruit }}</li>
+    </ul>
+
+    <div class="max-w-md mx-auto bg-gray-300 p-5" v-for="actor in actors" :key="actor.name">
+        <h2>{{actor.name}}</h2>
+        <h4 v-for="movie in actor.movies" :key="movie"> {{ movie }}</h4>
+    </div>
+
+    <h2 class="text-center"> add - {{ add(5,5,5)}} </h2>
+
+    <div class="max-w-md mx-auto container text-enter">
+      <h1 class="mb-10"><pre>{{JSON.stringify(formData, null, 2)}}</pre></h1>
+      <form action="">
+        <input class="w-full mb-4" type="text" id="fname" v-model="formData.fname">
+        <textarea class="w-full" id="profileSummary" v-model="formData.profileSummary"></textarea>
+      </form>
     </div>
 </template>
+
+
+<script>
+    export default {
+        name: "Learn",
+        data() {
+            return {
+                question: "Ready to dive in?",
+                answer: "SpaceWorks Starter App",
+                isEnabled: false,
+                fruits: ['apple', 'banana', 'orange', 'mango'],
+                actors: [{
+                        name: "Christian Bale",
+                        movies: ['a', 'b', 'c']
+                    },
+                    {
+                        name: "D Caprio",
+                        movies: ['x', 'y', 'z']
+                    },
+                ],
+                formData: {
+                  fname: "",
+                  profileSummary: ""
+                }
+            }
+        },
+        methods: {
+            add(a, b, c) {
+                return a + b + c;
+            },
+        }
+    }
+</script>
