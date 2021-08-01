@@ -39,3 +39,11 @@ watch
 immediate
 deep
 
+
+Components
+props [static, dyanamic]
+props typeof
+
+
+
+

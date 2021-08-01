@@ -1,4 +1,5 @@
 import Home from './views/Home.vue'
+import Learn from './views/Learn.vue'
 import About from './views/About.vue'
 import NotFound from './views/NotFound.vue'
 
@@ -6,6 +7,7 @@ import NotFound from './views/NotFound.vue'
 
 export const routes = [
   { path: '/', component: Home, meta: { title: 'Home' } },
+  { path: '/learn', component: Learn, meta: { title: 'Learn' } },
   {
     path: '/about',
     meta: { title: 'About' },
