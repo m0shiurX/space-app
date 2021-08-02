@@ -29,7 +29,7 @@
                 question: "Ready to dive in?",
                 answer: "SpaceWorks Starter App",
                 isEnabled: false,
-                fruits: ['apple', 'banana', 'orange', 'mango'],
+                fruits: ['apple', 'banana', 'orange', 'mango', 'pineapple'],
                 actors: [{
                         name: "Christian Bale",
                         movies: ['a', 'b', 'c']
