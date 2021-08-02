@@ -9,7 +9,7 @@
         <h2 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           Are you lost?
           <br />
-          <span class="mt-4 inline-block text-indigo-600">SpaceWorks Starter App</span>
+          <span class="mt-4 inline-block text-indigo-600">SpaceWorks App</span>
         </h2>
         <div class="flex mt-8 lg:flex-shrink-0 lg:mt-0">
           <div class="inline-flex rounded-md shadow">
