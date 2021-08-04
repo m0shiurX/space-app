@@ -18,6 +18,7 @@
             >
           </div>
         </div>
+        <p> Description on things </p>
       </div>
     </div>
 </template>
