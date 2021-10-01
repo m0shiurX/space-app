@@ -24,6 +24,6 @@
     "tailwindcss": "^2.2.16",
     "@vue/compiler-sfc": "^3.2.12",
     "@vitejs/plugin-vue": "^1.9.2",
-    "vite": "^2.6.1"
+    "vite": "^2.6.2"
   }
 }
