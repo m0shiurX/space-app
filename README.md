@@ -23,11 +23,11 @@ First-party plugins needed for Tailwind UI:
 
 #### Step 1:
 ```sh
-git clone https://github.com/unimrgm/space-app.git
+git clone https://github.com/m0shiur/vspacer.git
 ```
 #### Step 2:
 ```sh
-cd space-app
+cd vspacer
 ```
 #### Step 3:
 ```sh
